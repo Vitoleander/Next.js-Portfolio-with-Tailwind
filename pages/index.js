@@ -1,14 +1,18 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import { useState } from 'react';
+import Link from 'next/link';
+
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub, AiFillHeart } from 'react-icons/ai';
-import Image from 'next/image';
+
 import cv from '../public/cv.png';
-import a from '../public/a.png';
-import d from '../public/d.png';
-import f from '../public/f.png';
+import a from '../public/A.png';
+import d from '../public/D.png';
+import f from '../public/F.png';
 import ph1 from '../public/ph1.jpg';
 import ph2 from '../public/ph2.jpg';
-import { useState } from 'react';
+
 
 
 export default function Home() {
@@ -25,19 +29,19 @@ export default function Home() {
 
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white'>
         
-        <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between sticky'>
-            <h1 className='text-xl dark:text-white'>Johanna Fogel</h1>
+        <nav className='py-10 mb-12 flex justify-between sticky top-0 z-10'>
+            <h1 className='text-teal-600 text-xl font-bold dark:text-white'>Johanna Fogel</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
                 </li>
               <li>
-                <a className='bg-gradient-to-r from-teal-600 to-teal-900 text-white px-4 py-2 rounded-md ml-8 cursor-pointer' href='#'>Button</a>
+                <Link className='bg-gradient-to-r from-teal-600 to-teal-900 text-white px-4 py-2 rounded-md ml-8 cursor-pointer' href='/contact'>Say Hello!</Link>
                 </li>
             </ul>
           </nav>
 
+        <section className='min-h-screen relative'>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Welcome to my portfolio</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Frontend developer and UX/UI.</h3>
@@ -47,9 +51,9 @@ export default function Home() {
           </div>
 
           <div className='text-5xl flex justify-center gap-16 py-3 text-teal-900 '>
-            <AiFillLinkedin />
-            <AiFillGithub />
-            <AiFillHeart />
+            <Link href="https://www.linkedin.com/in/johanna-fogel-47209670/"><AiFillLinkedin /></Link>
+            <Link href="https://github.com/Vitoleander"><AiFillGithub /></Link>
+            <Link href=""><AiFillHeart /></Link>
           </div>
 
           <div className='relative mx-auto bg-gradient-to-t from-teal-700 w-90 h-90 rounded-full mt-20 flex justify-center lg:object-scale-down'>
@@ -66,8 +70,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='lg:flex gap-10 text-center flex justify-center'>
-            <div className='shadow-lg p-10 rounded xl my-10 dark:bg-gray-600'>
+          <div className='lg:flex gap-10 text-center justify-center'>
+            <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
                 <Image src={d} width={300} height={300} />
               </div>
@@ -80,7 +84,7 @@ export default function Home() {
               <p className='text-gray-800 dark:text-gray-400'>canva</p>
             </div>
 
-            <div className='shadow-lg p-10 rounded xl my-10 dark:bg-gray-600'>
+            <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
                 <Image src={f} width={300} height={300}/>
               </div>
@@ -92,7 +96,7 @@ export default function Home() {
               <p className='text-gray-800 dark:text-gray-400'>figma</p> 
               <p className='text-gray-800 dark:text-gray-400'>canva</p>
             </div>
-            <div className='shadow-lg p-10 rounded xl my-10 dark:bg-gray-600'>
+            <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
                 <Image src={a} width={300} height={300}/>
               </div>
@@ -145,6 +149,20 @@ export default function Home() {
           </div>
         </section>
 
+        <section>
+          <footer className='p-10 flex justify-between'>
+              <h1 className='text-xl dark:text-white'>Lorem ipsum © 2022</h1>
+                  <ul className='flex items-center dark:text-teal-600'>
+                      <li>
+                        <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
+                      </li>
+                      <li className='pl-5'>
+                        <AiFillHeart className='cursor-pointer text-2xl'/>
+                      </li>
+                  </ul>
+          </footer>
+        </section>
+        
       </main>
     </div>
   )
