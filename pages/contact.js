@@ -47,6 +47,26 @@ export default function Contact() {
                         <Link href="#"><AiFillHeart /></Link>
                     </div>
 
+                    <div>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <p>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" />
+                            </p>
+                            <p>
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" />
+                            </p>
+                            <p>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"></textarea>
+                            </p>
+                            <p>
+                                <button type="submit">Send</button>
+                            </p>
+                        </form>
+                    </div>
+
                     <footer className='p-10 flex justify-between'>
                         <h1 className='text-xl dark:text-white'>Lorem ipsum © 2022</h1>
                         <ul className='flex items-center dark:text-teal-600'>
