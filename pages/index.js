@@ -7,13 +7,16 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub, AiFillHeart } from 'react-icons/ai';
 
 import cv from '../public/cv.png';
+import Fisher from '../public/Fisher.png';
+import SneakerHeadz from '../public/SneakerHeadz.png';
+import Sl from '../public/Sl.png';
+import Login from '../public/login.png';
+import Port from '../public/port.png';
+import Port2 from '../public/port-2.png';
+
 import a from '../public/A.png';
 import d from '../public/D.png';
 import f from '../public/F.png';
-import ph1 from '../public/ph1.jpg';
-import ph2 from '../public/ph2.jpg';
-
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -123,27 +126,57 @@ export default function Home() {
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={ph1} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Fisher} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' alt=''/>
+              <div className='p-5'>
+                <h3>Fisher</h3>
+                <h4>School project: User experiences and interaction design</h4>
+                <Link href="https://marvelapp.com/prototype/2dbi4f1g">Show prototype</Link>
+              </div>
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={ph2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={SneakerHeadz} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <div className='p-5'>
+                <h3>SneakerHeadz</h3>
+                <h4>School project: Web framework for Javascript - Group project</h4>
+                <Link href="https://github.com/Vitoleander/SneakerHeadz">Show Github</Link>
+              </div>
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={ph1} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Sl} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <div className='p-5'>
+                <h3>SL new version</h3>
+                <h4>School project: Frontend UX/UI - Group project</h4>
+                <Link href="https://vxsm9q.axshare.com/#id=ci8ozr">Show prototype</Link>
+              </div>
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={ph2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Login} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <div className='p-5'>
+                <h3>React Login Module</h3>
+                <h4>React Login and Registration form with validation</h4>
+                <Link href="https://github.com/Vitoleander/ReactLoginModul">Show Github</Link>
+              </div>
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={ph1} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Port} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <div className='p-5'>
+                <h3>Web development portfolio</h3>
+                <h4>HTML, CSS portfolio with placeholders</h4>
+                <Link href="https://github.com/Vitoleander/prof">Show Github</Link>
+              </div>
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={ph2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Port2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <div className='p-5'>
+                <h3>Next.js Portfolio</h3>
+                <h4>Written in Next.js and Tailwind CSS</h4>
+                <Link href="https://github.com/Vitoleander/Next.js-Portfolio-with-Tailwind">Show Github</Link>
+              </div>
             </div>
 
           </div>

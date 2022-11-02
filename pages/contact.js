@@ -48,23 +48,14 @@ export default function Contact() {
                     </div>
 
                     <div>
-                        <form name="contact" method="POST">
-                            <p>
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" />
-                            </p>
-                            <p>
-                                <label for="email">Email</label>
-                                <input type="text" id="email" name="email" />
-                            </p>
-                            <p>
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message"></textarea>
-                            </p>
-                            <p>
-                                <button type="submit">Send</button>
-                            </p>
-                        </form>
+                    <form onsubmit="sendContact(event)">
+                        <label for="emailInput">Email</label>
+                        <input type="email" id="emailInput" />
+                        <label for="messageInput">Message</label>
+                        <textarea id="messageInput" rows="3"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+
                     </div>
 
                     <footer className='p-10 flex justify-between'>
@@ -84,3 +75,4 @@ export default function Contact() {
         </div>
     )
 }
+
