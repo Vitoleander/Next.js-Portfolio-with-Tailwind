@@ -21,6 +21,20 @@ import f from '../public/F.png';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    const data = {
+      name,
+      email,
+      message,
+    };
+    console.log(data);
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
 
@@ -164,40 +178,48 @@ export default function Home() {
           </div>
           
           
-          <div className='mt-40 p-0 min-h-full mt-5 w-auto'>
+          {/*<div className='mt-40 p-0 min-h-full mt-5 w-auto'>
                         <div className='flex justify-center items-center flex-col'>
                             <h1 className='text-center text-teal-600 text-4xl m-5'>Send me a message</h1>
 
                             <div className='w-1/3 p-6 rounded-lg'>
-                                <form className='mx-auto'>
+                                <form className='mx-auto' onSubmit={handleSubmit}>
                                     
                                     <div className='my-3 mx-auto'>
-                                        <input type="text" id="name" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your name' />
+                                        <input type="text" id="name" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your name'onchange={e => setName(e.target.value)} />
                                     </div>
 
                                     <div className='my-3 mx-auto'>
-                                        <input type="email" id="email" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your email' />
+                                        <input type="email" id="email" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your email' onchange={e => setEmail(e.target.value)}/>
                                     </div>
 
                                     <div className='my-3 mx-auto'>
-                                        <textarea id="messageInput" rows="3" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your message'></textarea>
+                                        <textarea id="message" type='text' rows="3" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your message'onchange={e => setMessage(e.target.value)}></textarea>
                                     </div>
 
-                                    <button className='w-full p-2 mt-2 bg-teal-900 text-white rounded-xl tracking-wide transition-all hover:bg-teal-600 hover:text-white'>
+                                    <button type='submit' className='w-full p-2 mt-2 bg-teal-900 text-white rounded-xl tracking-wide transition-all hover:bg-teal-600 hover:text-white'>
                                         Submit
                                     </button>
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+        
+        <div className='text-center mt-6 bg-teal-900 p-7'>
+        <h3 className='text-5xl py-1 text-white'>Want to say hi?</h3>
+        <h4 className='text-3xl text-white'> You can send me a mail at</h4>
+        <h4 className='text-2xl text-white mt-2'>jfogel90@gmail.com</h4>
+        </div>
+        
         </section>
 
         <section>
           <footer className='p-10 flex justify-between'>
               <h1 className='text-xl dark:text-white'>Johanna Fogel © 2022</h1>
                   <ul className='flex items-center dark:text-teal-600'>
+                      <li className='text-xl'>Page under construction</li>
                       <li className='pl-5'>
-                        <AiFillHeart className='text-2xl'/>
+                        <AiFillHeart className='text-2xl mr-2'/>
                       </li>
                   </ul>
           </footer>
@@ -207,3 +229,5 @@ export default function Home() {
     </div>
   )
 }
+ 
+
