@@ -47,15 +47,31 @@ export default function Contact() {
                         <Link href="#"><AiFillHeart /></Link>
                     </div>
 
-                    <div>
-                    <form onsubmit="sendContact(event)">
-                        <label for="emailInput">Email</label>
-                        <input type="email" id="emailInput" />
-                        <label for="messageInput">Message</label>
-                        <textarea id="messageInput" rows="3"></textarea>
-                        <button type="submit">Send</button>
-                    </form>
+                    <div className='bg-teal-600 m-0 p-0 min-h-full mt-5 w-auto'>
+                        <div className='flex justify-center items-center flex-col'>
+                            <h1 className='text-center text-white text-4xl m-5'>Contact me</h1>
 
+                            <div className='w-2/5 p-6 rounded-lg'>
+                                <form className='mx-auto'>
+                                    
+                                    <div className='my-3 mx-auto'>
+                                        <input type="text" id="name" className='w-full outline-none border-none rounded-xl' placeholder='Your name' />
+                                    </div>
+
+                                    <div className='my-3 mx-auto'>
+                                        <input type="email" id="email" className='w-full outline-none border-none rounded-xl' placeholder='Your email' />
+                                    </div>
+
+                                    <div className='my-3 mx-auto'>
+                                        <textarea id="messageInput" rows="3" className='w-full outline-none border-none rounded-xl' placeholder='Your message'></textarea>
+                                    </div>
+
+                                    <button className='w-full p-2 mt-2 bg-white rounded-xl tracking-wide transition-all hover:bg-teal-900 hover:text-white'>
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <footer className='p-10 flex justify-between'>

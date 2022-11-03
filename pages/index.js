@@ -33,30 +33,29 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white'>
         
         <nav className='py-10 mb-12 flex justify-between sticky top-0 z-10'>
-            <h1 className='text-teal-600 text-xl font-bold dark:text-white'>Johanna Fogel</h1>
+            <h1 className='text-teal-600 text-3xl font-bold dark:text-white'>Johanna Fogel</h1>
             <ul className='flex items-center'>
-              <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
+              <li className='flex justify-center text-center text-teal-600'>
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-4xl'/>
+                Click here
                 </li>
-              <li>
-                <Link className='bg-gradient-to-r from-teal-600 to-teal-900 text-white px-4 py-2 rounded-md ml-8 cursor-pointer' href='/contact'>Say Hello!</Link>
-                </li>
+
             </ul>
           </nav>
 
         <section className='min-h-screen relative'>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Welcome to my portfolio</h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>Frontend developer and UX/UI.</h3>
+            <h3 className='mt-5 text-2xl py-2 md:text-3xl'>Frontend developer and UX/UI.</h3>
             <p className='text-md py-5 leading-6 text-gray-800 md:text-xl mx-auto dark:text-gray-400'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis risus, iaculis pellentesque accumsan ut, ultrices tempor urna. 
+            Frontend student with a passion for UX/UI and design. Avalible for internship this spring.
             </p>
           </div>
 
-          <div className='text-5xl flex justify-center gap-16 py-3 text-teal-900 '>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-teal-700 '>
             <Link href="https://www.linkedin.com/in/johanna-fogel-47209670/"><AiFillLinkedin /></Link>
             <Link href="https://github.com/Vitoleander"><AiFillGithub /></Link>
-            <Link href=""><AiFillHeart /></Link>
+            
           </div>
 
           <div className='relative mx-auto bg-gradient-to-t from-teal-700 w-90 h-90 rounded-full mt-20 flex justify-center lg:object-scale-down'>
@@ -66,10 +65,10 @@ export default function Home() {
 
         <section className='text-center lg:mt-6'>
           <div>
-            <h3 className='text-3xl pt-5'>Lorem Ipsum Skills</h3>
-            <p className='text-md py-4 leading-6 text-gray-800 dark:text-gray-400'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <span className='text-teal-600'>aliquet</span> sagittis est quis fermentum.
-            Nullam accumsan <span className='text-teal-600'>hendrerit</span> malesuada. Maecenas tempus mi convallis nisl accumsan aliquet ut eget augue.
+            <h3 className='text-3xl pt-5'>My skills</h3>
+            <p className='text-xl py-4 leading-6 text-gray-800 dark:text-gray-400'>
+            I have always been <span className='text-teal-600'>creative</span>, which you can see both in my professional life and in my free time. Soon I'll have a degree as <span className='text-teal-600'>Frontend developer</span>, but over the years I've been taking courses in design and UX/UI. 
+            My dream would be to work with <span className='text-teal-600'>UX/UI</span> and combine it with coding.
             </p>
           </div>
 
@@ -78,48 +77,44 @@ export default function Home() {
               <div className='mx-auto flex justify-center'>
                 <Image src={d} width={300} height={300} />
               </div>
-              <h3 className='text-lg font-medium pt-4 pb-1'>Project 1</h3>
-              <p className='py-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <h4 className='text-teal-600 pt-1'>Project specs:</h4>
-              <p className='text-gray-800 dark:text-gray-400'>React</p> 
-              <p className='text-gray-800 dark:text-gray-400'>css</p> 
-              <p className='text-gray-800 dark:text-gray-400'>figma</p> 
-              <p className='text-gray-800 dark:text-gray-400'>canva</p>
+              <h3 className='py-1 text-xl'>This is some of the programs I use to design</h3>
+              <h4 className='text-teal-600 pt-1 text-lg'>Programs:</h4>
+              <p className='text-gray-800 dark:text-gray-400'>Adobe XD, Photoshop, InDesign</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Figma</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Uizard</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Axure</p>
             </div>
 
             <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
                 <Image src={f} width={300} height={300}/>
-              </div>
-              <h3 className='text-lg font-medium pt-4 pb-1'>Project 2</h3>
-              <p className='py-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <h4 className='text-teal-600 pt-1'>Project specs:</h4>
-              <p className='text-gray-800 dark:text-gray-400'>React</p> 
-              <p className='text-gray-800 dark:text-gray-400'>css</p> 
-              <p className='text-gray-800 dark:text-gray-400'>figma</p> 
-              <p className='text-gray-800 dark:text-gray-400'>canva</p>
+              </div>             
+              <h3 className='py-1 text-xl'>This is some of the coding language I've learnt so far</h3>
+              <h4 className='text-teal-600 pt-1 text-lg'>Code Language:</h4>
+              <p className='text-gray-800 dark:text-gray-400'>HTML & CSS</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Javascript</p> 
+              <p className='text-gray-800 dark:text-gray-400'>React & React Native</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Next.js</p>
             </div>
             <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
                 <Image src={a} width={300} height={300}/>
               </div>
-              <h3 className='text-lg font-medium pt-4 pb-1'>Project 3</h3>
-              <p className='py-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <h4 className='text-teal-600 pt-1'>Project specs:</h4>
-              <p className='text-gray-800 dark:text-gray-400'>React</p> 
-              <p className='text-gray-800 dark:text-gray-400'>css</p> 
-              <p className='text-gray-800 dark:text-gray-400'>figma</p> 
-              <p className='text-gray-800 dark:text-gray-400'>canva</p>
+              <h3 className='py-1 text-xl'>Engaging myself in various type of creative sorts</h3>
+              <h4 className='text-teal-600 pt-1 text-lg'>What I usually do:</h4>
+              <p className='text-gray-800 dark:text-gray-400'>Painting</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Styling Homes & People</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Photography</p> 
+              <p className='text-gray-800 dark:text-gray-400'>Flower, plants & gardening</p>
             </div>
           </div>
         </section>
 
         <section>
           <div className='text-center'>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-6 text-gray-800 dark:text-gray-400'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <span className='text-teal-600'>aliquet</span> sagittis est quis fermentum.
-            Nullam accumsan <span className='text-teal-600'>hendrerit</span> malesuada. Maecenas tempus mi convallis nisl accumsan aliquet ut eget augue.
+            <h3 className='text-5xl py-1 text-teal-600'>Portfolio</h3>
+            <p className='text-xl mt-3 py-2 leading-6 text-gray-800 dark:text-gray-400'>
+            Here are some of my recent designes and codes, This portfolio is a <span className='text-teal-600'>work-in-progress</span> and I'll be updating it as often as I can.
             </p>
           </div>
 
@@ -128,69 +123,81 @@ export default function Home() {
             <div className='basis-1/3 flex-1'>
               <Image src={Fisher} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' alt=''/>
               <div className='p-5'>
-                <h3>Fisher</h3>
-                <h4>School project: User experiences and interaction design</h4>
-                <Link href="https://marvelapp.com/prototype/2dbi4f1g">Show prototype</Link>
-              </div>
-            </div>
-
-            <div className='basis-1/3 flex-1'>
-              <Image src={SneakerHeadz} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
-              <div className='p-5'>
-                <h3>SneakerHeadz</h3>
-                <h4>School project: Web framework for Javascript - Group project</h4>
-                <Link href="https://github.com/Vitoleander/SneakerHeadz">Show Github</Link>
-              </div>
-            </div>
-
-            <div className='basis-1/3 flex-1'>
-              <Image src={Sl} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
-              <div className='p-5'>
-                <h3>SL new version</h3>
-                <h4>School project: Frontend UX/UI - Group project</h4>
-                <Link href="https://vxsm9q.axshare.com/#id=ci8ozr">Show prototype</Link>
+                <h4 className='mb-4 text-xl'>School project: User experiences and interaction design</h4>
+                <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://marvelapp.com/prototype/2dbi4f1g">Show prototype</Link>
               </div>
             </div>
 
             <div className='basis-1/3 flex-1'>
               <Image src={Login} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
               <div className='p-5'>
-                <h3>React Login Module</h3>
-                <h4>React Login and Registration form with validation</h4>
-                <Link href="https://github.com/Vitoleander/ReactLoginModul">Show Github</Link>
+                <h4 className='mb-4 text-xl'>React Login and Registration form with validation</h4>
+                <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://github.com/Vitoleander/ReactLoginModul">Show Github</Link>
+              </div>
+            </div>
+
+            <div className='basis-1/3 flex-1'>
+              <Image src={Sl} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <div className='p-5'>
+                <h4 className='mb-4 text-xl'>School project: Frontend UX/UI - Group project</h4>
+                <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://vxsm9q.axshare.com/#id=ci8ozr">Show prototype</Link>
               </div>
             </div>
 
             <div className='basis-1/3 flex-1'>
               <Image src={Port} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
               <div className='p-5'>
-                <h3>Web development portfolio</h3>
-                <h4>HTML, CSS portfolio with placeholders</h4>
-                <Link href="https://github.com/Vitoleander/prof">Show Github</Link>
+                <h4 className='mb-4 text-xl'>Web development portfolio - HTML, CSS portfolio with placeholders</h4>
+                <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://github.com/Vitoleander/prof">Show Github</Link>
               </div>
             </div>
 
-            <div className='basis-1/3 flex-1'>
+            {/*<div className='basis-1/3 flex-1'>
               <Image src={Port2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
               <div className='p-5'>
                 <h3>Next.js Portfolio</h3>
                 <h4>Written in Next.js and Tailwind CSS</h4>
                 <Link href="https://github.com/Vitoleander/Next.js-Portfolio-with-Tailwind">Show Github</Link>
               </div>
-            </div>
-
+              </div>
+            */}
           </div>
+          
+          
+          <div className='mt-40 p-0 min-h-full mt-5 w-auto'>
+                        <div className='flex justify-center items-center flex-col'>
+                            <h1 className='text-center text-teal-600 text-4xl m-5'>Send me a message</h1>
+
+                            <div className='w-1/3 p-6 rounded-lg'>
+                                <form className='mx-auto'>
+                                    
+                                    <div className='my-3 mx-auto'>
+                                        <input type="text" id="name" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your name' />
+                                    </div>
+
+                                    <div className='my-3 mx-auto'>
+                                        <input type="email" id="email" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your email' />
+                                    </div>
+
+                                    <div className='my-3 mx-auto'>
+                                        <textarea id="messageInput" rows="3" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your message'></textarea>
+                                    </div>
+
+                                    <button className='w-full p-2 mt-2 bg-teal-900 text-white rounded-xl tracking-wide transition-all hover:bg-teal-600 hover:text-white'>
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
         </section>
 
         <section>
           <footer className='p-10 flex justify-between'>
-              <h1 className='text-xl dark:text-white'>Lorem ipsum © 2022</h1>
+              <h1 className='text-xl dark:text-white'>Johanna Fogel © 2022</h1>
                   <ul className='flex items-center dark:text-teal-600'>
-                      <li>
-                        <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
-                      </li>
                       <li className='pl-5'>
-                        <AiFillHeart className='cursor-pointer text-2xl'/>
+                        <AiFillHeart className='text-2xl'/>
                       </li>
                   </ul>
           </footer>
