@@ -67,9 +67,9 @@ export default function Home() {
             <p className='text-xl py-4 leading-6 text-gray-800 dark:text-gray-400'>
             I have always been 
             <span className='text-teal-600'>creative</span>
-            , which you can see both in my professional life and in my free time. Soon I'll have a degree as 
-            <span className='text-teal-600'>Frontend developer</span>
-            , but over the years I've been taking courses in design and UX/UI. 
+            , which you can see both in my professional life and in my free time. Soon I will have a degree in 
+            <span className='text-teal-600'>Frontend development</span>
+            , but over the years I have been taking courses in design and UX/UI. 
             My dream would be to work with 
             <span className='text-teal-600'>UX/UI</span> 
             and combine it with coding.
@@ -93,7 +93,7 @@ export default function Home() {
               <div className='mx-auto flex justify-center'>
                 <Image src={f} width={300} height={300} alt=''/>
               </div>             
-              <h3 className='py-1 text-xl'>This is some of the coding language I've learnt so far</h3>
+              <h3 className='py-1 text-xl'>This is some of the coding language I have learnt so far</h3>
               <h4 className='text-teal-600 pt-1 text-lg'>Code Language:</h4>
               <p className='text-gray-800 dark:text-gray-400'>HTML & CSS</p> 
               <p className='text-gray-800 dark:text-gray-400'>Javascript</p> 
@@ -118,7 +118,7 @@ export default function Home() {
           <div className='text-center'>
             <h3 className='text-5xl py-1 text-teal-600'>Portfolio</h3>
             <p className='text-xl mt-3 py-2 leading-6 text-gray-800 dark:text-gray-400'>
-            Here are some of my recent designes and codes, This portfolio is a <span className='text-teal-600'>work-in-progress</span> and I'll be updating it as often as I can.
+            Here are some of my recent designes and codes, This portfolio is a <span className='text-teal-600'>work-in-progress</span> and I will be updating it as often as I can.
             </p>
           </div>
 
