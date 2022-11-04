@@ -149,45 +149,7 @@ export default function Home() {
                 <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://github.com/Vitoleander/prof">Show Github</Link>
               </div>
             </div>
-
-            {/*<div className='basis-1/3 flex-1'>
-              <Image src={Port2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
-              <div className='p-5'>
-                <h3>Next.js Portfolio</h3>
-                <h4>Written in Next.js and Tailwind CSS</h4>
-                <Link href="https://github.com/Vitoleander/Next.js-Portfolio-with-Tailwind">Show Github</Link>
-              </div>
-              </div>
-            */}
           </div>
-          
-          
-          {/*<div className='mt-40 p-0 min-h-full mt-5 w-auto'>
-                        <div className='flex justify-center items-center flex-col'>
-                            <h1 className='text-center text-teal-600 text-4xl m-5'>Send me a message</h1>
-
-                            <div className='w-1/3 p-6 rounded-lg'>
-                                <form className='mx-auto' onSubmit={handleSubmit}>
-                                    
-                                    <div className='my-3 mx-auto'>
-                                        <input type="text" id="name" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your name'onchange={e => setName(e.target.value)} />
-                                    </div>
-
-                                    <div className='my-3 mx-auto'>
-                                        <input type="email" id="email" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your email' onchange={e => setEmail(e.target.value)}/>
-                                    </div>
-
-                                    <div className='my-3 mx-auto'>
-                                        <textarea id="message" type='text' rows="3" className='w-full outline-none border-teal-600 rounded-xl' placeholder='Your message'onchange={e => setMessage(e.target.value)}></textarea>
-                                    </div>
-
-                                    <button type='submit' className='w-full p-2 mt-2 bg-teal-900 text-white rounded-xl tracking-wide transition-all hover:bg-teal-600 hover:text-white'>
-                                        Submit
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div> */}
         
         <div className='text-center mt-6 bg-teal-900 p-7'>
         <h3 className='text-5xl py-1 text-white'>Want to say hi?</h3>
