@@ -8,11 +8,9 @@ import { AiFillLinkedin, AiFillGithub, AiFillHeart } from 'react-icons/ai';
 
 import cv from '../public/cv.png';
 import Fisher from '../public/Fisher.png';
-import SneakerHeadz from '../public/SneakerHeadz.png';
 import Sl from '../public/Sl.png';
 import Login from '../public/login.png';
 import Port from '../public/port.png';
-import Port2 from '../public/port-2.png';
 
 import a from '../public/A.png';
 import d from '../public/D.png';
