@@ -19,20 +19,6 @@ import f from '../public/F.png';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    const data = {
-      name,
-      email,
-      message,
-    };
-    console.log(data);
-  };
-
   return (
     <div className={darkMode ? "dark" : ""}>
 
@@ -71,7 +57,7 @@ export default function Home() {
           </div>
 
           <div className='relative mx-auto bg-gradient-to-t from-teal-700 w-90 h-90 rounded-full mt-20 flex justify-center lg:object-scale-down'>
-            <Image src={cv} layout="fill" objectFit="cover" />
+            <Image src={cv} layout="fill" objectFit="cover" alt='cv image'/>
           </div>
         </section>
 
@@ -87,7 +73,7 @@ export default function Home() {
           <div className='lg:flex gap-10 text-center justify-center'>
             <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
-                <Image src={d} width={300} height={300} />
+                <Image src={d} width={300} height={300} alt=''/>
               </div>
               <h3 className='py-1 text-xl'>This is some of the programs I use to design</h3>
               <h4 className='text-teal-600 pt-1 text-lg'>Programs:</h4>
@@ -99,7 +85,7 @@ export default function Home() {
 
             <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
-                <Image src={f} width={300} height={300}/>
+                <Image src={f} width={300} height={300} alt=''/>
               </div>             
               <h3 className='py-1 text-xl'>This is some of the coding language I've learnt so far</h3>
               <h4 className='text-teal-600 pt-1 text-lg'>Code Language:</h4>
@@ -110,7 +96,7 @@ export default function Home() {
             </div>
             <div className='shadow-lg p-10 rounded xl my-10 '>
               <div className='mx-auto flex justify-center'>
-                <Image src={a} width={300} height={300}/>
+                <Image src={a} width={300} height={300} alt=''/>
               </div>
               <h3 className='py-1 text-xl'>Engaging myself in various type of creative sorts</h3>
               <h4 className='text-teal-600 pt-1 text-lg'>What I usually do:</h4>
@@ -141,7 +127,7 @@ export default function Home() {
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={Login} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Login} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' alt=''/>
               <div className='p-5'>
                 <h4 className='mb-4 text-xl'>React Login and Registration form with validation</h4>
                 <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://github.com/Vitoleander/ReactLoginModul">Show Github</Link>
@@ -149,7 +135,7 @@ export default function Home() {
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={Sl} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Sl} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' alt=''/>
               <div className='p-5'>
                 <h4 className='mb-4 text-xl'>School project: Frontend UX/UI - Group project</h4>
                 <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://vxsm9q.axshare.com/#id=ci8ozr">Show prototype</Link>
@@ -157,7 +143,7 @@ export default function Home() {
             </div>
 
             <div className='basis-1/3 flex-1'>
-              <Image src={Port} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+              <Image src={Port} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' alt=''/>
               <div className='p-5'>
                 <h4 className='mb-4 text-xl'>Web development portfolio - HTML, CSS portfolio with placeholders</h4>
                 <Link className='bg-teal-600 text-white px-2 py-2 rounded-md cursor-pointer' href="https://github.com/Vitoleander/prof">Show Github</Link>
