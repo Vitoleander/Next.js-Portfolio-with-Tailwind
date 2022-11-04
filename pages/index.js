@@ -65,8 +65,14 @@ export default function Home() {
           <div>
             <h3 className='text-3xl pt-5'>My skills</h3>
             <p className='text-xl py-4 leading-6 text-gray-800 dark:text-gray-400'>
-            I have always been <span className='text-teal-600'>creative</span>, which you can see both in my professional life and in my free time. Soon I'll have a degree as <span className='text-teal-600'>Frontend developer</span>, but over the years I've been taking courses in design and UX/UI. 
-            My dream would be to work with <span className='text-teal-600'>UX/UI</span> and combine it with coding.
+            I have always been 
+            <span className='text-teal-600'>creative</span>
+            , which you can see both in my professional life and in my free time. Soon I'll have a degree as 
+            <span className='text-teal-600'>Frontend developer</span>
+            , but over the years I've been taking courses in design and UX/UI. 
+            My dream would be to work with 
+            <span className='text-teal-600'>UX/UI</span> 
+            and combine it with coding.
             </p>
           </div>
 
